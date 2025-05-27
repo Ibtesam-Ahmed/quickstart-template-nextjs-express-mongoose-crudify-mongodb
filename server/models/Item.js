@@ -7,4 +7,4 @@ const itemSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
 });
 
-module.exports = mongoose.model('TT_Item', itemSchema);
+module.exports = mongoose.model('Items', itemSchema);
