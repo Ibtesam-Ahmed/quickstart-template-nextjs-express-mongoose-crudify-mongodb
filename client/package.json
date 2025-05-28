@@ -9,14 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.18",
-    "@mui/material": "^5.14.18",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource-variable/dm-sans": "^5.2.5",
+    "@fontsource/barlow": "^5.2.5",
+    "@iconify/react": "^6.0.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/lab": "^7.0.0-beta.12",
+    "@mui/material": "^7.1.0",
+    "apexcharts": "^4.7.0",
     "axios": "^1.6.2",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "minimal-shared": "^1.0.11",
     "next": "14.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "simplebar-react": "^3.3.1"
   },
   "devDependencies": {
     "@types/node": "22.15.21",

@@ -1,25 +1,23 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { CacheProvider } from '@emotion/react';
-import theme from '../styles/theme';
-import cache from '../styles/cache';
+
+import { ThemeProvider } from 'src/theme/theme-provider'; // Material Kit custom provider
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
   return (
-    <CacheProvider value={cache}>
+    <>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title>Your App Title</title>
       </Head>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
+
+      <ThemeProvider>
         <Component {...pageProps} />
       </ThemeProvider>
-    </CacheProvider>
+    </>
   );
 }
 
